@@ -41,7 +41,7 @@ export default {
   				foreground: 'hsl(var(--destructive-foreground))'
   			},
 			custom:{
-				DEFAULT:'#1E46F0',
+				DEFAULT:'#0c2cb5',
 				foreground:'#fff'
 			},
   			border: 'hsl(var(--border))',

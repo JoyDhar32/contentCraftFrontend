@@ -1,8 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    domains: ['cdn-icons-png.flaticon.com'], // Add the domain here
+  },
 };
+
 module.exports = {
   env: {
     BACKEND_API_URL: process.env.BACKEND_API_URL,
