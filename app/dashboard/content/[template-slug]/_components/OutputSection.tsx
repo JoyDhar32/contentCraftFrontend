@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Copy } from 'lucide-react';
 import { useRef } from 'react';
 export default function OutputSection() {
-  const editorRef:any = useRef();
+  const editorRef: any = useRef();
   return (
     <div className="bg-white shadow-lg border">
       <div className="flex justify-between items-center p-5">
@@ -14,13 +14,13 @@ export default function OutputSection() {
         <Button variant="custom"><Copy /> Copy</Button>
       </div>
       <Editor
-      ref={editorRef}
-        initialValue="Here is the output" 
+        ref={editorRef}
+        initialValue="Here is the output"
         height="600px"
         initialEditType="WYSIWYG"
         useCommandShortcut={true}
         onChange={() => console.log(editorRef.current.getInstance().getMarkdown())}
       />
-      </div>
+    </div>
   )
 }

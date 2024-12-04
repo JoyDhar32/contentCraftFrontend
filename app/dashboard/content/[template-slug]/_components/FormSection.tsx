@@ -5,14 +5,16 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import Image from 'next/image';
 import React, { useState } from 'react';
+import { VscLoading } from 'react-icons/vsc';
 
 interface PROPS {
     selectedTemplate?: TEMPLATE; 
     userFormInput:any
+    loading: boolean;
     // Allow optional selectedTemplate
 }
 
-export default function FormSection({ selectedTemplate,userFormInput }: PROPS) {
+export default function FormSection({ selectedTemplate,userFormInput,loading }: PROPS) {
     const [formData, setFormData] = useState<Record<string, any>>({});
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -70,8 +72,9 @@ export default function FormSection({ selectedTemplate,userFormInput }: PROPS) {
                     </div>
                 ))}
                 <div className="flex justify-center items-center">
-                    <Button type="submit" variant="custom" className="mt-4 w-2/3 py-5 shadow-lg">
-                        Generate Content
+                    <Button type="submit" variant="custom" className="mt-4 w-2/3 py-5 shadow-lg" disabled={loading}>
+                    {loading?<VscLoading className="animate-spin"/>: "Generate Content"}
+                       
                     </Button>
                 </div>
             </form>
