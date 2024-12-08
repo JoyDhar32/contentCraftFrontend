@@ -12,11 +12,6 @@ export default [
                 field: 'input',
                 name: 'niche',
                 required: true
-            },
-            {
-                label: 'Enter blog outline',
-                field: 'textarea',
-                name: 'outline',
             }
         ]
     },
@@ -33,11 +28,6 @@ export default [
                 field: 'input',
                 name: 'topic',
                 required: true
-            },
-            {
-                label: 'Enter blog Outline here',
-                field: 'textarea',
-                name: 'outline'
             }
         ]
     },
@@ -70,11 +60,6 @@ export default [
                 field: 'input',
                 name: 'keywords',
                 required: true
-            },
-            {
-                label: 'Enter youtube description Outline here',
-                field: 'textarea',
-                name: 'outline'
             }
         ]
     },
@@ -91,11 +76,6 @@ export default [
                 field: 'input',
                 name: 'topic',
                 required: true
-            },
-            {
-                label: 'Enter youtube Outline here',
-                field: 'textarea',
-                name: 'outline'
             }
         ]
     },
@@ -112,11 +92,6 @@ export default [
                 field: 'input',
                 name: 'title',
                 required: true
-            },
-            {
-                label: 'Enter youtube video Outline here (Optional)',
-                field: 'textarea',
-                name: 'outline'
             }
         ]
     },
@@ -130,7 +105,7 @@ export default [
         form: [
             {
                 label: '🤖 Provide your Article/Blogpost or any other content to rewrite.',
-                field: 'textarea',
+                field: 'input',
                 name: 'article',
                 required: true
             }
@@ -146,7 +121,7 @@ export default [
         form: [
             {
                 label: 'Enter text that you want to re-write or improve',
-                field: 'textarea',
+                field: 'input',
                 name: 'textToImprove'
             }
         ]
@@ -161,7 +136,7 @@ export default [
         form: [
             {
                 label: 'Enter your text to add emojis',
-                field: 'textarea',
+                field: 'input',
                 name: 'outline',
                 required: true
             }
@@ -250,7 +225,7 @@ export default [
         form: [
             {
                 label: 'Enter description of code you want along with Programming Lang',
-                field: 'textarea',
+                field: 'input',
                 name: 'codeDesscripton',
                 required: true
             },
@@ -268,7 +243,7 @@ export default [
         form: [
             {
                 label: 'Enter code which you want to understand',
-                field: 'textarea',
+                field: 'input',
                 name: 'codeDesscripton',
                 required: true
             },
@@ -286,7 +261,7 @@ export default [
         form: [
             {
                 label: 'Enter code which you want to test bug',
-                field: 'textarea',
+                field: 'input',
                 name: 'codeInput',
                 required: true
             },
@@ -308,12 +283,7 @@ export default [
                 name: 'productName',
                 required: true
             },
-            {
-                label: 'What you are selling / Marketting',
-                field: 'textarea',
-                name: 'outline',
-                required: true
-            },
+     
 
         ]
     },
@@ -330,12 +300,6 @@ export default [
                 label: 'Product Name',
                 field: 'input',
                 name: 'productName',
-                required: true
-            },
-            {
-                label: 'Product Details',
-                field: 'textarea',
-                name: 'outline',
                 required: true
             },
 

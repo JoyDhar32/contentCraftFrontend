@@ -174,7 +174,7 @@ export default [
         category: 'blog',
 
         slug: 'instagram-post-generator',
-        aiPrompt: 'Generate 3 Instagram post depends on a given keywords and give output in  in rich text editor format',
+        aiPrompt: 'Generate 3 Instagram post depends on a given keywords and give output in rich text editor format the minimum limit of post description is 500 words and the text will be properly formatted',
         form: [
             {
                 label: 'Enter Keywords for your post',
